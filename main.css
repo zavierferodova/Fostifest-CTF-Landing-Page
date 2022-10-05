@@ -41,6 +41,27 @@ body {
     cursor: pointer;
 }
 
+.mobile-nav-menu {
+    background: linear-gradient(180deg, #181C24 0%, rgba(13, 13, 14, 0.8) 125.86%);
+    animation: dropdownAnimation 0.3s;
+}
+
+.mobile-nav-menu a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@keyframes dropdownAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hero {
     background-image: url('images/grid-hero-bg.png');
 }
