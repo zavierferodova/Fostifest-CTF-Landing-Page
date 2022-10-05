@@ -14,29 +14,31 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <nav class="navbar flex justify-between items-center px-4 lg:px-8 py-4">
-        <a href="/" class="flex items-center">
-            <div class="w-[1.6rem] md:w-[2.8rem]">
-                <img src="./images/logo.webp"/>
+    <nav class="navbar px-4 lg:px-8 py-4">
+        <div class="content-container flex justify-between items-center">
+            <a href="/" class="flex items-center">
+                <div class="w-[1.6rem] md:w-[2.8rem]">
+                    <img src="./images/logo.webp"/>
+                </div>
+                <span class="font-signika ml-2 font-bold text-base md:text-2xl text-white">FOSTIFEST</span>
+            </a>
+            <div class="nav-menu hidden lg:flex gap-4 text-white font-montserrat">
+                <a href="/users">Users</a>
+                <a href="/teams">Teams</a>
+                <a href="/scoreboard">Scoreboard</a>
+                <a href="/challenges">Challenges</a>
             </div>
-            <span class="font-signika ml-2 font-bold text-base md:text-2xl text-white">FOSTIFEST</span>
-        </a>
-        <div class="nav-menu hidden lg:flex gap-4 text-white font-montserrat">
-            <a href="/users">Users</a>
-            <a href="/teams">Teams</a>
-            <a href="/scoreboard">Scoreboard</a>
-            <a href="/challenges">Challenges</a>
-        </div>
-        <div class="block lg:hidden">
-            <button class="mobile-nav-button text-white text-base p-2 border-[1px] h-fit w-fit rounded-lg flex lg:hidden justify-center items-center">
-                <iconify-icon icon="ci:hamburger"></iconify-icon>
-            </button>
-        </div>
-        <div class="mobile-nav-menu fixed hidden flex-col items-center gap-2 left-0 right-0 top-[4.5rem] overflow-hidden mt-2 p-4 text-white font-montserrat rounded-2xl mx-4">
-            <a href="/users">Users</a>
-            <a href="/teams">Teams</a>
-            <a href="/scoreboard">Scoreboard</a>
-            <a href="/challenges">Challenges</a>
+            <div class="block lg:hidden">
+                <button class="mobile-nav-button text-white text-base p-2 border-[1px] h-fit w-fit rounded-lg flex lg:hidden justify-center items-center">
+                    <iconify-icon icon="ci:hamburger"></iconify-icon>
+                </button>
+            </div>
+            <div class="mobile-nav-menu fixed hidden flex-col items-center gap-2 left-0 right-0 top-[4.5rem] overflow-hidden mt-2 p-4 text-white font-montserrat rounded-2xl mx-4">
+                <a href="/users">Users</a>
+                <a href="/teams">Teams</a>
+                <a href="/scoreboard">Scoreboard</a>
+                <a href="/challenges">Challenges</a>
+            </div>
         </div>
     </nav>
     <main>
@@ -138,36 +140,38 @@
             </div>
         </div>
     </main>
-    <footer class="footer grid grid-cols-1 md:grid-cols-2 mt-28 p-16 rounded-t-[2rem]">
-        <div class="flex justify-center md:justify-start">
-            <div class="w-[2.2rem] h-[2.2rem] md:w-[2.5rem] md:h-[2.5rem] mr-2 md:mr-4">
-                <img class="w-full h-full" src="./images/logo.webp"/>
+    <footer class="footer mt-28 p-16 rounded-t-[2rem]">
+        <div class="content-container grid grid-cols-1 md:grid-cols-2">
+            <div class="flex justify-center md:justify-start">
+                <div class="w-[2.2rem] h-[2.2rem] md:w-[2.5rem] md:h-[2.5rem] mr-2 md:mr-4">
+                    <img class="w-full h-full" src="./images/logo.webp"/>
+                </div>
+                <div>
+                    <div class="font-space-mono font-bold text-white text-xl md:text-3xl mb-1">
+                        FOSTIFEST
+                    </div>
+                    <div class="font-montserrat text-white text-xs md:text-sm">
+                        &copy; Copyright 2022 - FOSTI UMS
+                    </div>
+                </div>
             </div>
             <div>
-                <div class="font-space-mono font-bold text-white text-xl md:text-3xl mb-1">
-                    FOSTIFEST
-                </div>
-                <div class="font-montserrat text-white text-xs md:text-sm">
-                    &copy; Copyright 2022 - FOSTI UMS
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="flex flex-col justify-center items-center md:items-end mt-8 md:mt-0">
-                <div class="flex flex-col items-center">
-                    <div class="text-white mb-3 font-medium font-montserrat text-xl">
-                        CONTACT US
-                    </div>
-                    <div class="inline-flex justify-center gap-4">
-                        <a href="https://www.instagram.com/fosti_ums/" class="text-3xl contact-menu">
-                            <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
-                        </a>
-                        <a href="https://chat.whatsapp.com/E6sCVayTopBHMLlVAj1CSv" class="text-3xl contact-menu">
-                            <iconify-icon icon="akar-icons:whatsapp-fill"></iconify-icon>
-                        </a>
-                        <a href="https://github.com/FOSTI-UMS" class="text-3xl contact-menu">
-                            <iconify-icon icon="akar-icons:github-fill"></iconify-icon>
-                        </a>
+                <div class="flex flex-col justify-center items-center md:items-end mt-8 md:mt-0">
+                    <div class="flex flex-col items-center">
+                        <div class="text-white mb-3 font-medium font-montserrat text-xl">
+                            CONTACT US
+                        </div>
+                        <div class="inline-flex justify-center gap-4">
+                            <a href="https://www.instagram.com/fosti_ums/" class="text-3xl contact-menu">
+                                <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
+                            </a>
+                            <a href="https://chat.whatsapp.com/E6sCVayTopBHMLlVAj1CSv" class="text-3xl contact-menu">
+                                <iconify-icon icon="akar-icons:whatsapp-fill"></iconify-icon>
+                            </a>
+                            <a href="https://github.com/FOSTI-UMS" class="text-3xl contact-menu">
+                                <iconify-icon icon="akar-icons:github-fill"></iconify-icon>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
